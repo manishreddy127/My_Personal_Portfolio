@@ -24,6 +24,7 @@
 
 
 
+
 <style>
 
 /*======================================
@@ -56,6 +57,18 @@
   background-color: #ffbd39;
 }
 
+.zoom-effect {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
+
 
 /* Animation styles */
 #typing-animation {
@@ -78,6 +91,8 @@
   background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
+
+ 
 
 @keyframes typing {
   from {
@@ -128,8 +143,11 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+	          <!-- <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li> -->
+			  <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certificates</span></a></li> 
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -191,7 +209,7 @@
 			            <h2>Graduate Assistant at University of Southern Mississippi</h2>
 						 <h2 class="d-flex" style="margin-bottom: 0">With over 4+ years of experience</h2> 
 						 <br> 
-			            <p><a href="https://www.linkedin.com/in/manishreddygoli/" class="btn btn-white btn-outline-white py-3 px-4">Linkedin</a></p> 
+			            <p><a href="" class="btn btn-white btn-outline- py-3 px-4">LinkedIn</a></p> 
 		            </div>
 		          </div>
 	        	</div>
@@ -235,9 +253,15 @@
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>Python Development</span> <span class="pull-right">85%</span>
+									<span>Front-End Development</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Back-End Development</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
@@ -276,38 +300,40 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>I’m a passionate Full Stack Developer with over 4 years of hands-on experience in designing, developing, and deploying scalable web applications using Python, Django, React.js, Vue.js, and Node.js. Currently pursuing my Master’s in Computer Science with a 3.925 GPA, I’ve had the opportunity to explore advanced concepts in software engineering, cloud computing, and machine learning. I’ve worked extensively with cloud platforms like AWS and Netlify, and DevOps tools such as Docker, Kubernetes, and Jenkins—optimizing deployment pipelines, ensuring 99.9% uptime, and improving deployment efficiency by 60%. My experience also includes building intelligent ML models using Scikit-learn, TensorFlow, and PyTorch, achieving up to 92% accuracy for real-world prediction and classification problems. I thrive in collaborative Agile environments, and I enjoy translating complex challenges into elegant, data-driven solutions.</p>
+								<p>I'm a Full Stack Developer with 4+ years of experience building scalable web applications using Python, Django, React.js, and Node.js. Currently pursuing a Master’s in Computer Science (GPA: 3.925), I’ve worked with cloud platforms like AWS and tools like Docker and Kubernetes to streamline deployments and boost system efficiency. I also have hands-on experience with machine learning, building models for real-world prediction tasks. I enjoy solving complex problems through clean, effective code in collaborative, Agile environments.</p>
 									
-				<div class="row">			
-				<div class="row-md-6">
-									
-									<li class="d-flex"><span>Profile: </span><span>  Full Stack Developer</span></li>
-									<li class="d-flex"><span>Education:</span><span>  Master's in Computer Science</span></li>
-									<li class="d-flex"><span>Language:</span><span>  Python, JavaScript (ES6+), TypeScript, Java, C++, SQL</span></li>
-									<li class="d-flex"><span>Front End:</span><span>  React.js, Next.js, Redux, HTML5, CSS3, Tailwind CSS, Bootstrap</span></li>
-									<li class="d-flex"><span>Back End:</span><span>  Node.js, Express.js, Flask, Spring Boot, .NET, RESTful & GraphQL APIs</span></li>
-									<li class="d-flex"><span>Databases: </span><span>  MongoDB, MySQL, PostgreSQL, Redis, DynamoDB</span></li>
-									<li class="d-flex"><span>DevOps&Cloud:</span><span>  AWS (EC2, S3, Lambda, API Gateway), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions</span></li>
-									<li class="d-flex"><span>Testing:</span><span> Jest, Postman, Mocha, Selenium</span></li>
-									<li class="d-flex"><span>Tools&Practices:</span><span>  Git, GitHub, JIRA, Agile (Scrum), CI/CD, Swagger, System Design</span></li>
-									<li class="d-flex"><span>Machine-Learning:</span><span>  Scikit-learn, TensorFlow, PyTorch, NLP, CNN, Data Visualization (Matplotlib, Seaborn)</span></li>
-				</div>				
-				</div>					
+								<div class="row">			
+									<div class="row-md-6">
+									  <ul class="list-unstyled">
+										<li class="d-flex"><strong>Profile:</strong>&nbsp;&nbsp;Full Stack Developer</li>
+										<li class="d-flex"><strong>Education:</strong>&nbsp;&nbsp;Master's in Computer Science</li>
+										<li class="d-flex"><strong>Language:</strong>&nbsp;&nbsp;Python, JavaScript (ES6+), TypeScript, Java, C++, SQL</li>
+										<li class="d-flex"><strong>Front-End:</strong>&nbsp;&nbsp;React.js, Next.js, Redux, HTML5, CSS3, Tailwind CSS, Bootstrap</li>
+										<li class="d-flex"><strong>Back-End:</strong>&nbsp;&nbsp;Node.js, Express.js, Flask, Spring Boot, .NET, RESTful & GraphQL APIs</li>
+										<li class="d-flex"><strong>Databases:</strong>&nbsp;&nbsp;MongoDB, MySQL, PostgreSQL, Redis, DynamoDB</li>
+										<li class="d-flex"><strong>DevOps&Cloud:</strong>&nbsp;&nbsp;AWS (EC2, S3, Lambda, API Gateway), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions</li>
+										<li class="d-flex"><strong>Testing:</strong>&nbsp;&nbsp;Jest, Postman, Mocha, Selenium</li>
+										<li class="d-flex"><strong>Tools:</strong>&nbsp;&nbsp;Git, GitHub, JIRA, Agile (Scrum), CI/CD, Swagger, System Design</li>
+										<li class="d-flex"><strong>Machine Learning:</strong>&nbsp;&nbsp;TensorFlow, PyTorch, NLP, CNN, Data Visualization</li>
+									  </ul>
+									</div>
+								  </div>
+											  
 			
 								</ul>
 							</div>
 						</div>
 
 
-						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+						 <div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span> -->
-								<!-- </p>
+									<span class="number" data-number="8">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span> 
+								 </p>
 								<p><a href="https://www.linkedin.com/in/manishreddygoli/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
-						</div>  -->
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -317,15 +343,15 @@
 
 
 	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
+  
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <!-- <p>I am a Data Engineer with 3.5+ years of experience in building scalable data pipelines, real-time analytics, and AI-driven solutions. I specialize in big data technologies like Spark, Kafka, and Hadoop, along with cloud platforms such as AWS and Azure. My expertise in ETL processes and automation helps optimize data workflows for efficiency and better decision-making.
-
-				With a strong foundation in Python, SQL, and machine learning, I have worked on cloud-native applications, automated ETL pipelines, and interactive dashboards. As a Graduate Assistant at the University of Southern Mississippi, I also mentor students in Python and data engineering concepts.</p> -->
+			<div class="underline mb-5 mx-auto"></div>
+			<br><br>
+            <p>For a concise overview of my professional background and skills, feel free to view or download my resume below!</p>
 			<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
     				<p><a href="images\ManishGoli.pdf" class="btn btn-primary py-4 px-s5">Download Resume</a></p>
@@ -333,11 +359,16 @@
     		</div>
           </div>
         </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
+	
+	<section class="ftco-section ftco-no-pb" id="experience-section">	
+		<div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Experience</h1>
+			  <h2 class="mb-4">Experience</h2>
+			  <div class="underline"></div>
+			  
+			</div>
+		  </div>
 		<br>
 		
 		<div class="row">
@@ -353,7 +384,7 @@
 							    <li>Managed lab infrastructure, resolving 20+ hardware/software malfunctions each week and upholding a 99.9% uptime for academic tools; personally answered 5+ student questions daily.</li>
 									
 							</ul>
-						</p>
+					
 					</div>
 
 				</div>
@@ -405,11 +436,20 @@
 
 		<br>
 		<br>
-
-		<div class="row">
+		</section>
+		<section class="ftco-section ftco-no-pb" id="education-section">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				  <h1 class="big big-2">Education</h1>
+				  <h2 class="mb-4">Education</h2>
+				  <div class="underline"></div>
+				  
+				</div>
+			  </div>
+		<!-- <div class="row">
 			<h1 class="big-4">Education</h1>
 			<div class="underline"></div>
-		</div>
+		</div> -->
 		<br>
 		
 			<div class="row">
@@ -446,12 +486,50 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <!-- <h1 class="big big-2">Projects</h1>
+            <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python And Power BI .</p>
+			<div class="underline mb-5 mx-auto"></div>
+            
           </div>
         </div>
         <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/manishreddy127/SQL_Music_Store_Analysis" class="block-20 zoom-effect" style="background-image: url('images/project3.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/manishreddy127/SQL_Music_Store_Analysis">Ramie Crop Disease Monitoring | NSF-Funded Project</a></h3>
+				  <p>Developed an AI-driven system using CNNs and cloud architecture to detect and monitor diseases in ramie crops, achieving 92% accuracy.
+					</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/manishreddy127/Python_Diwali_Sales_Analysis" class="block-20 zoom-effect" style="background-image: url('images/project2.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/manishreddy127/Python_Diwali_Sales_Analysis">Python-Based Student Performance Prediction System</a></h3>
+				  <p>Built a machine learning model in Python to predict student performance, enabling early interventions through data-driven insights.
+					</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/manishreddy127/Madhav_Sales_Dashboard" class="block-20 zoom-effect" style="background-image: url('images/task_management_web_application.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/manishreddy127/Madhav_Sales_Dashboard">Task Management Web Application </a></h3>
+				  <p>I designed and implemented a full-stack web application to manage tasks efficiently, supporting real-time updates, user authentication, and team collaboration features.
+
+				  </p>
+				</div>
+			  </div>
+			</div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
               <a href="https://github.com/manishreddy127/SQL_Music_Store_Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
@@ -487,7 +565,102 @@
           </div>
         </div>
 	<br>
-    </section> -->
+    </section> 
+	
+	<section class="container my-5" id="certifications-section">
+		<br>
+		<div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certifiactes</h1>
+			  <h2 class="mb-4">Certificates</h2>
+			  <div class="underline mb-5 mx-auto"></div>
+			  
+			</div>
+		  </div>
+		
+	</br>
+		<div class="row">
+	  
+		  <!-- Certificate 1 -->
+		  <div class="col-md-12 col-lg-6 d-flex ftco-animate">
+			<div class="blog-entry">
+			  <a href="images/AWS Course Completion Certificate_page-0001.jpg" class="block-20 zoom-effect" style="background-image: url('images/AWS Course Completion Certificate_page-0001.jpg'); height: 350px;" target="_blank">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="images/AWS Course Completion Certificate_page-0001.jpg" target="_blank">AWS Cloud Essentials Knowledge Badge</a></h3>
+				<p>
+					I earned the AWS Cloud Essentials Knowledge Badge by successfully completing the assessment, demonstrating my foundational understanding of AWS cloud services.</p>
+			  </div>
+			</div>
+		  </div>
+
+		    <!-- Certificate 2 -->
+
+			<div class="col-md-12 col-lg-6 d-flex ftco-animate">
+				<div class="blog-entry">
+				  <a href="images/aws_cloud_partinioner.jpg" class="block-20 zoom-effect" style="background-image: url('images/aws_cloud_partinioner.jpg'); height: 350px;" target="_blank">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="images/aws_cloud_partinioner.jpg" target="_blank">AWS Cloud Practitioner </a></h3>
+					<p>I earned the AWS Cloud Practitioner Essentials certification by successfully completing the course and assessment, showcasing my foundational knowledge of AWS services, cloud concepts, and best practices.</p>
+				  </div>
+				</div>
+			  </div>
+		  
+	  
+		  <!-- Certificate 3 -->
+		  <div class="col-md-12 col-lg-6 d-flex ftco-animate">
+		  <div class="blog-entry">
+			<a href="images/responsive_web_certificate.png" class="block-20 zoom-effect" style="background-image: url('images/responsive_web_certificate.png'); height: 350px;" target="_blank">
+			</a>
+			<div class="text mt-3 float-right d-block">
+			  <h3 class="heading"><a href="images/responsive_web_certificate.png" target="_blank">Responsive Web Design</a></h3>
+			  <p>I earned the Responsive Web Design certification from freeCodeCamp by building projects and mastering HTML, CSS, JavaScript and responsive layout techniques to create mobile-friendly websites.</p>
+			</div>
+		  </div>
+		</div>
+	  
+		<!-- Certificate 4 -->
+		<div class="col-md-12 col-lg-6 d-flex ftco-animate">
+			<div class="blog-entry">
+			  <a href="images/Certificate_Of_Appreciation_GoliManishReddy.png" class="block-20 zoom-effect" style="background-image: url('images/Certificate_Of_Appreciation_GoliManishReddy.png'); height: 350px;" target="_blank">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="images/Certificate_Of_Appreciation_GoliManishReddy.png" target="_blank">Certificate of Appreciation as a Full Stack Developer</a></h3>
+				<p>Certificate of Appreciation for outstanding contributions as a Full Stack Developer at Marcellus Infotech, where you demonstrated exceptional skills and dedication over the span of two years</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Certificate 5 -->
+		  <div class="col-md-12 col-lg-6 d-flex ftco-animate">
+			<div class="blog-entry">
+			  <a href="images/java.png" class="block-20 zoom-effect" style="background-image: url('images/java.png'); height: 350px;" target="_blank">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="images/java.png" target="_blank">Java Programming Certificate</a></h3>
+				<p>Completed Java fundamental programming course with object-oriented programming and coding tasks.</p>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Certificate 6 -->
+		  <div class="col-md-12 col-lg-6 d-flex ftco-animate">
+			<div class="blog-entry">
+			  <a href="images/dbms.png" class="block-20 zoom-effect" style="background-image: url('images/dbms.png'); height: 350px;" target="_blank">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="images/dbms.png" target="_blank">Certificate of Completion RDBMS with PostgreSQL </a></h3>
+				<p>Certificate of Completion in RDBMS with a focus on PostgreSQL, demonstrating proficiency in relational database management, Studied core DBMS concepts and advanced SQL techniques.</p>
+			  </div>
+			</div>
+		  </div>
+	  
+		  
+		  
+	  
+		</div>
+	  </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
@@ -503,7 +676,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="4">0</strong>
+                <strong class="number" data-number="8">0</strong>
                 <span>Projects</span>
               </div>
             </div>
@@ -511,7 +684,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="5">0</strong>
+                <strong class="number" data-number="6">0</strong>
                 <span>Certificates</span>
               </div>
             </div>
@@ -526,20 +699,29 @@
           </div>
         </div>
       </div>
-	
-	  <!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			 <div class="container"> -->
-				<!-- <div class="row justify-content-center">
+  
+	<div class="ftco-section ftco-hireme img margin-top" style="
+    background-image: url(images/bg_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100wv;
+    display: flex;
+    align-items: center;
+                 ">
+			 <div class="container"> 
+				 <div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+					<div class="heading"> <h4> I’m passionate about tackling complex challenges  &amp; delivering end-to-end solutions through real-world full stack development projects</h4>
 						<br>
 						<p><a href="https://github.com/manishreddy127" class="btn btn-primary py-3 px-5">GitHub</a></p>
 						</div>
-					</div> -->
+					</div> 
 				</div> 
-			<!-- </div> -->
-		</div> 
+			 </div>
+	</div> 
 	</section>
 
 
@@ -564,6 +746,9 @@
 	            <p>Hattiesburg, MS</p>
 	          </div>
           </div>
+
+
+
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
@@ -573,6 +758,8 @@
 	            <p><a href="tel://0101010101">+1 (601) 699 2338</a></p>
 	          </div>
           </div>
+
+
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
@@ -582,6 +769,8 @@
 	            <p><a href="mailto:info@yoursite.com">manishreddygoli2@gmail.com</a></p>
 	          </div>
           </div>
+
+
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
